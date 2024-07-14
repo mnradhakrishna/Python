@@ -1,0 +1,12 @@
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n*fact(n-1)
+x= int(input(""))
+if x<0:
+    print("Factorial cannot be found for negative numbers")
+elif x==0:
+    print("Factorial of 0 is 1")
+else:
+    print("Factorial of",x,"is", fact(x))
