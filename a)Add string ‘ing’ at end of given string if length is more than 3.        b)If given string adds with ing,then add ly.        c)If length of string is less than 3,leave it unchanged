@@ -1,0 +1,8 @@
+a = input()
+if len(a) > 3:
+    if a[-3:] == 'ing':
+        print(a + 'ly')
+    else:
+        print(a + 'ing')
+else:
+    print(a)
