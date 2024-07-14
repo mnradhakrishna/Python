@@ -1,0 +1,15 @@
+def find_median(lst):
+    lst.sort()
+    n = len(lst)
+    mid = n // 2
+    
+    if n % 2 == 0:
+        median = (lst[mid - 1] + lst[mid]) / 2
+    else:
+        median = lst[mid]
+    
+    return median
+
+data = [3, 1, 4, 1, 5, 9, 2]
+median_value = find_median(data)
+print("The median is:", median_value)
