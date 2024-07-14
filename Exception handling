@@ -1,0 +1,32 @@
+#1.try
+try:
+    print(x)
+except NameError:
+    print('variable x is not defined')
+except:
+    print('something went wrong')
+#2.except
+try:
+    print('hello')
+except NameError:
+    print('something went wrong')
+except:
+    print('nothing went wrong')
+#3.finally
+try:
+    print(x)
+except:
+    print('something went wrong')
+finally:
+    print('The try excekpt is finished')
+#4.else
+try:
+    print(x)
+except NameError:
+    print('variable x is not defined')
+else:
+    print('something went wrong')
+#5.raise
+x=-4
+if x<0:
+    raise Exception('sorry,no number below zero')
