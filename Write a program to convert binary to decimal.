@@ -6,4 +6,4 @@ for i in range(len(bin)):
     power=2**i
     res=digit*power
     dec=dec+res
-    print(dec)
+print(dec)
